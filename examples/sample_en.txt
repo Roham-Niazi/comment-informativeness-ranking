@@ -1,0 +1,50 @@
+﻿Great video! The explanation of TF-IDF finally made sense to me.
+I’m a complete beginner with NLP, and I liked that you didn’t jump straight into complicated deep learning models. The preprocessing and classification steps were easy to follow.
+One thing I was wondering about: why did you choose this particular classifier instead of logistic regression or a linear SVM? Would be interesting to see how the three compare on the same dataset.
+The preprocessing section was really useful. I especially liked the explanation of removing unnecessary text before creating the TF-IDF features.
+Very helpful.
+How would this model handle sarcasm? A sentence like “Wow, that was just amazing…” can obviously be negative depending on context, but TF-IDF probably won’t understand that very well.
+I tried following along with the code and got confused about the train/test split. Should the TF-IDF vectorizer always be fitted only on the training data to avoid data leakage?
+Nice introduction to practical NLP. The part about turning text into numerical features is something I struggled with before watching this.
+Thanks for sharing! I’m going to use this approach as a baseline for a small review classification project.
+I think the evaluation could have gone a little deeper. Accuracy is useful, but precision, recall, F1-score, and especially the confusion matrix would give a much better picture if the classes are not balanced.
+The model works nicely as a starting point, but I’d love to see a follow-up using word embeddings or a transformer model and compare the results with TF-IDF.
+I have a question about preprocessing: is stemming always a good idea for sentiment analysis? Sometimes reducing words to their stems seems like it could remove information that matters for sentiment.
+This was exactly the kind of beginner-friendly machine learning tutorial I needed. Clear explanations without making the code feel overwhelming.
+Could you show how you would save the trained vectorizer and classifier and load them later for predictions? I’m especially interested in deploying this as an API.
+I liked the real-world applications at the end. Customer reviews, social media monitoring, and support-ticket analysis seem like obvious use cases.
+The part about TF-IDF weighting was my favorite. I knew the term before, but I never really understood why common words get lower weights until this explanation.
+Great pacing overall. One small criticism: I wish you had explained the assumptions behind the chosen model a bit more instead of focusing mostly on the implementation.
+What happens if the incoming text contains words that were not present when the TF-IDF vocabulary was built? Does the vectorizer just ignore them?
+I’m learning Python and this was a nice bridge between basic programming and machine learning. The project feels realistic rather than just being another toy example.
+Would an n-gram range like (1,2) improve sentiment classification here? Negations such as “not good” seem important, and unigrams alone might lose some of that context.
+I appreciate that you discussed limitations instead of presenting the model as perfect. Real-world sentiment data is messy, and the improvement section was probably the most valuable part for me.
+Could you make a video about handling an imbalanced sentiment dataset? I’d like to understand when to use class weights, oversampling, or other techniques.
+The code was easy to reproduce, which is honestly one of the best things about this tutorial.
+I was surprised by how much you can accomplish with a relatively simple TF-IDF pipeline. It’s a good reminder that you don’t always need a huge neural network for a useful baseline.
+How would you deal with emojis and things like “LOVE this!!!” during preprocessing? Removing punctuation and special characters might actually remove useful sentiment signals.
+Great video!
+I noticed that the model evaluation depends heavily on the dataset. It would be interesting to test it on a completely separate dataset from a different source and see how well it generalizes.
+For deployment, would you recommend retraining the model periodically as new customer reviews arrive? I’m wondering how you would handle changes in vocabulary and sentiment over time.
+Thanks for explaining each step instead of just pasting a finished notebook. That made it much easier to understand what the code is actually doing.
+I think a comparison between a bag-of-words model, TF-IDF, and embeddings would make a great follow-up. Seeing the tradeoffs in accuracy, speed, memory, and interpretability would be really useful.
+I got a better understanding of why the vectorizer has to be fit before transforming the text. Small detail, but tutorials often skip over this and beginners end up confused.
+Could you explain more about false positives and false negatives in sentiment analysis? I understand the definitions, but I’d like to know which one is usually more costly in a real customer-support application.
+The explanation was good, but I felt the preprocessing choices were a little too fixed. Different datasets can need very different cleaning rules, so some guidance on how to decide what to remove would help.
+This is the first NLP project I’ve actually been able to follow from raw text all the way to model evaluation. Really appreciate how practical it was.
+I wonder whether adding negation handling would improve the results. Something like “not happy” can be very different from “happy,” and basic preprocessing may treat those words too independently.
+Very helpful. The TF-IDF example was simple enough that I could actually understand what was happening mathematically.
+If the model is trained on product reviews, how would you adapt it for movie reviews? Would you expect the same vocabulary and feature weights to transfer well, or would you retrain from scratch?
+One suggestion for a future tutorial: include error analysis with examples of the reviews the model classified incorrectly. I think seeing the actual mistakes would teach a lot about what the model is missing.
+I liked the balance between theory and code. There was enough explanation to understand the concepts without turning the video into a long lecture.
+What would be the best way to expose this model through a simple Flask or FastAPI endpoint? A small deployment demo would be really useful.
+The discussion about real-world applications was interesting, but I’d also like to hear about monitoring model performance after deployment. Accuracy can change when the incoming text starts looking different from the training data.
+Nice work. I especially appreciated that you showed the complete workflow rather than only explaining individual NLP techniques.
+Could the model be affected if the dataset contains duplicate reviews in both the training and test sets? I’m guessing that could make the evaluation look much better than the real performance.
+I think explaining cross-validation would have been a useful addition. A single train/test split can sometimes give a misleading result depending on how the data happens to be divided.
+The tutorial motivated me to finally try sentiment analysis on my own dataset. I’m still confused about hyperparameter tuning, though, especially which parameters are worth tuning for the classifier.
+I liked that the example stayed relatively simple. Sometimes NLP tutorials throw five different libraries and a giant model at you before explaining the basics.
+Is there a good way to handle multilingual reviews with this kind of TF-IDF approach? I’m curious whether one model could work reasonably well across several languages or whether separate preprocessing and models would be better.
+The model seems useful, but I’d be careful about using sentiment predictions for important business decisions without checking the errors manually. A wrong classification can have very different consequences depending on the application.
+Thanks for sharing! The explanation of the full pipeline—from preprocessing to feature extraction, training, and evaluation—gave me a much clearer mental picture of how a text classification project fits together.
+I would love to see a follow-up where you take this exact model and put it into a small web app so users can enter a sentence and see the predicted sentiment. That would make the deployment side much easier to understand.
