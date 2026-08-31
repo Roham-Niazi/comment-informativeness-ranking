@@ -1,5 +1,6 @@
 import gradio as gr
 from src.ranker import CommentRanker
+import os
 
 #Function to prepare sample text
 def set_samples_btn_click(lang):
@@ -66,4 +67,10 @@ with gr.Blocks() as demo:
 		outputs=table,
 	)
 
-demo.launch()
+
+
+demo.launch(
+	server_name="0.0.0.0",
+	server_port=int(os.environ.get("PORT", 7860)),
+	share=False
+)
