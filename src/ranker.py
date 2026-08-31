@@ -1,16 +1,16 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
-from nltk import word_tokenize, data, download
+from nltk import word_tokenize, download
 import re
 import hazm
 import string
 
-#Checking nltk dependencies
-try:
-	data.find("tokenizers/punkt_tab")
-except LookupError:
-	download("punkt_tab")
+#Downloading nltk dependencies
+download("stopwords")
+download("wordnet")
+download("punkt")
+download("punkt_tab")
 
 
 class CommentRanker():

@@ -37,7 +37,7 @@ def submit_comments(comments, lang):
 
 
 
-with gr.Blocks() as demo:
+with gr.Blocks(title="Comment Informativeness Ranker") as demo:
 	with gr.Row():
 		with gr.Column():
 			comments_input=gr.Textbox(label="Comments", placeholder="Enter each comment in one line", lines=10)
